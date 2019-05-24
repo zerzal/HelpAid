@@ -82,6 +82,8 @@ print "<FONT SIZE = 2 color = red>* </font>Contact name\:\&nbsp\;\&nbsp\;<br>";
 print "<input id=con name=con type=text><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Contact phone number\:\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;<br>";
 print "<input id=ctel name=ctel type=text><br><br>";
+print "<input type=submit> * <input type=reset><br><br>\n";
+print "</form>";
 print "<br><br>";
 print "</ul></body></html>\n";
 exit;
