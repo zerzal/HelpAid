@@ -5,7 +5,7 @@
 # Set Variables
 #######################
 
-$cgiurl = "http://www.unc.edu/usr-bin/dcayers/LS/CAL/TEST/leaveX.pl";
+$cgiurl = "http://help-aid-dcayers.cloudapps.unc.edu/";
 $ver = "1.0";  # SCRIPT VERSION NUMBER
     
 # Get the input
@@ -74,11 +74,11 @@ print "<html><head><title>Help Ticket Aid $ver</title></head>\n";
 print "<body><FONT SIZE = 5><b>LIFE SAFETY SYSTEMS<br>HELP TICKET AID</b></FONT><FONT SIZE = 2 color = red>\&nbsp\;\&nbsp\;<b>$ver</b><br><br>\n";
 print "* </font><i> = Required fields</i><br><br>\n";
 print "<form method=POST action= $cgiurl>\n";
-print "<FONT SIZE = 2 color = red>* </font>Telephone number(s) with the problem\:\&nbsp\;\&nbsp\;\n";
+print "<FONT SIZE = 2 color = red>* </font>Telephone number(s) with the problem\:\&nbsp\;\&nbsp\;<br>";
 print "<input id=tel name=tel type=text><br><br>";
-print "<FONT SIZE = 2 color = red>* </font>Please provide the location where you are having this problem (building name/room #/etc)\:\&nbsp\;\&nbsp\;\n";
+print "<FONT SIZE = 2 color = red>* </font>Please provide the location where you are having this problem (building name/room #/etc)\:\&nbsp\;\&nbsp\;<br>";
 print  "<input id=loc name=loc type=text><br><br>";
-print "<FONT SIZE = 2 color = red>* </font>Contact name\:\&nbsp\;\&nbsp\;\n";
+print "<FONT SIZE = 2 color = red>* </font>Contact name\:\&nbsp\;\&nbsp\;<br>";
 print "<input id=con name=con type=text><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Contact phone number\:\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;<br>";
 print "<input id=ctel name=ctel type=text><br><br>";
