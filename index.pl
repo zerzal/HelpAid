@@ -85,7 +85,7 @@ print  "<option></option>\n";
 # open file of tech and phone number pairs to read
 open(TECH, "<", $techtbl) or die "ERROR:cannot open db file $!"; 
 # Split the name-phone number pairs
-@pairs = split(/=/, $techtbl);
+@pairs = split(/=/, <TECH>);
 while (<TECH>)
 {
 foreach $pair (@pairs) {
