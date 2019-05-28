@@ -84,11 +84,10 @@ print  "<select name=con>\n";
 print  "<option></option>\n";
 # open file of tech and phone number pairs to read
 open(TECH, "<", $techtbl) or die "ERROR:cannot open db file $!"; 
-while (<TECH>)
-{
 # Split the name-phone number pairs
 @pairs = split(/=/, $techtbl);
-
+while (<TECH>)
+{
 foreach $pair (@pairs) {
    ($con, $ctel) = split(/=/, $pair);
    print  "<option value=$con>$con</option>\n";
