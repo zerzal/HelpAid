@@ -83,17 +83,6 @@ print  "<input id=loc name=loc type=text size=55><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Contact name\:\&nbsp\;\&nbsp\;<br>";
 print  "<select name=con>\n";
 print  "<option></option>\n";
-# open file of tech and phone number pairs to read
-open(TECH, "<", $techtbl) or die "ERROR:cannot open db file $!"; 
-# Split the name-phone number pairs
-my @pairs = split(/=/, <TECH>);
-close TECH;
-#while (@pairs)
-#{
-my $con = "bla";
-print  "<option value=$con>$con</option>\n";
-#}
-
 
 # print "<input id=con name=con type=text><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Contact phone number\:\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;<br>";
