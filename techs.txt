@@ -1,14 +1,14 @@
-Ayers, Dwayne*919-904-0195
-Bass,Jamie*919-904-0843
-Brown, Jason*919-943-2881
-Chick, John*919-883-7297
-Coombs, Steve*919-928-6370
-Heidinger, Jason*919-428-1882
-Hill, James*919-904-0199
-KAIM, FEVZI*919-201-7732
-Lipscomb, Max*984-215-1853
-Miskow, Michael*919-201-7749
-Morlock, Hal*919-973-9399
-Quigley, Eric*919-904-0203
-Straughn, Kerry*919-904-0825
+Ayers, Dwayne=919-904-0195
+Bass,Jamie=919-904-0843
+Brown, Jason=919-943-2881
+Chick, John=919-883-7297
+Coombs, Steve=919-928-6370
+Heidinger, Jason=919-428-1882
+Hill, James=919-904-0199
+KAIM, FEVZI=919-201-7732
+Lipscomb, Max=984-215-1853
+Miskow, Michael=919-201-7749
+Morlock, Hal=919-973-9399
+Quigley, Eric=919-904-0203
+Straughn, Kerry=919-904-0825
 
