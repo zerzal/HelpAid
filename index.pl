@@ -86,7 +86,7 @@ print  "<option></option>\n";
 open(TECH, "<", $techtbl) or die "ERROR:cannot open db file $!"; 
 while (<TECH>)
 {
-   chomp;
+   #chomp;
    my ($key, $val) = split /=/;
    my $con=$techtbl{$key};
    my $ctel=$techtbl{$val};
