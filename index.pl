@@ -90,7 +90,7 @@ my @pairs = split(/=/, <TECH>);
 close TECH;
 while (@pairs)
 {
-my $con = $pair(@pairs);
+my $con = "bla";
 print  "<option value=$con>$con</option>\n";
 }
 
