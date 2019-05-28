@@ -88,8 +88,9 @@ while (<TECH>)
 {
    chomp;
    my ($key, $val) = split /=/;
-   $iptb{$key} .= exists $iptb{$key} ? "$val" : $val;
-   print  "<option value=$iptb{$key}>$iptb{$key}</option>\n";
+   my $con=$techtbl{$key};
+   my $ctel=$techtbl{$val};
+   print  "<option value=$con>$con</option>\n";
 }
 close TECH;
 
