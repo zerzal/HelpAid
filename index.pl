@@ -93,7 +93,7 @@ sub output {
 print "Content-type: text/html\n\n";
 print "<html><head><title>HELP TICKET AIR OUTPUT</title></head>\n";
 print "<body><FONT SIZE = 5><b>LIFE SAFETY SYSTEMS<br>HELP TICKET AIR OUTPUT</b></FONT><FONT SIZE = 2 color = red>\&nbsp\;\&nbsp\;<b>$ver</b></font><br><br>\n";
-print "<body><FONT SIZE = 4 COLOR=RED><b>COPY AND PASTE BELOW TEXT FOR TICKET ENTRY</b></FONT>\n";
+print "<body><FONT SIZE = 4 COLOR=RED><b>COPY AND PASTE BELOW TEXT FOR TICKET ENTRY</b></FONT><br><br>\n";
 print "Please provide the following information\:<br><br>";
 print "Telephone number(s) with the problem (required)\:<br><br>";
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$FORM{'tel'}<br><br>";
