@@ -86,11 +86,13 @@ print  "<option></option>\n";
 open(TECH, "<", $techtbl) or die "ERROR:cannot open db file $!"; 
 while (<TECH>)
 {
-   #chomp;
-   my ($key, $val) = split /=/;
-   my $con=$techtbl{$key};
-   my $ctel=$techtbl{$val};
+# Split the name-phone number pairs
+@pairs = split(/=/, $techtbl);
+
+foreach $pair (@pairs) {
+   ($con, $ctel) = split(/=/, $pair);
    print  "<option value=$con>$con</option>\n";
+   }
 }
 close TECH;
 
