@@ -88,7 +88,7 @@ open(TECH, "<", $techtbl) or die "ERROR:cannot open db file $!";
 @pairs = split(/=/, <TECH>);
 while (<TECH>)
 {
-$con = $pair (@pairs)
+$con = $pair (@pairs);
 print  "<option value=$con>$con</option>\n";
    
 }
