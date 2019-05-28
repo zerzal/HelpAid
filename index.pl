@@ -86,13 +86,13 @@ print  "<option></option>\n";
 open(TECH, "<", $techtbl) or die "ERROR:cannot open db file $!"; 
 # Split the name-phone number pairs
 @pairs = split(/=/, <TECH>);
-while (<TECH>)
-{
-$con = $pair (@pairs);
-print  "<option value=$con>$con</option>\n";
-   
-}
 close TECH;
+while (@pairs)
+{
+$con = $pair(@pairs);
+print  "<option value=$con>$con</option>\n";
+}
+
 
 # print "<input id=con name=con type=text><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Contact phone number\:\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;<br>";
