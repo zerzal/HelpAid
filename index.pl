@@ -80,7 +80,20 @@ print "<input id=tel name=tel type=text><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Please provide the location where you are having this problem (building name/room #/etc)\:\&nbsp\;\&nbsp\;<br>";
 print  "<input id=loc name=loc type=text size=55><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Contact name\:\&nbsp\;\&nbsp\;<br>";
-print "<input id=con name=con type=text><br><br>";
+print  "<select name=con>\n";
+print  "<option></option>\n";
+# open file of tech and phone number pairs to read
+open(TECH, "<", $techtbl) or die "ERROR:cannot open db file $!"; 
+while (<TECH>)
+{
+   chomp;
+   my ($key, $val) = split /=/;
+ #  $iptb{$key} .= exists $iptb{$key} ? "$val" : $val;
+   print  "<option value=$iptb{$key}>$iptb{$key}</option>\n";
+}
+close TECH;
+
+# print "<input id=con name=con type=text><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Contact phone number\:\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;<br>";
 print "<input id=ctel name=ctel type=text><br><br>";
 print "<input type=submit> * <input type=reset><br><br>\n";
