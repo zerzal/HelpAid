@@ -90,7 +90,7 @@ close $data;
  
  foreach my $lines (@lines) {
    my ($contact, $phone) = split(/=/, $lines);
-   print  "<option value='$contact*$phone'>$contact\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$phone</option>\n";
+   print  "<option value='$contact&$phone'>$contact\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$phone</option>\n";
    }
    
 print  "</select>\n";
@@ -102,7 +102,7 @@ exit;
 }
 
 sub output {
-#my ($con, $ctel) = split(/*/, $FORM{'con'});
+my ($con, $ctel) = split(/&/, $FORM{'con'});
 print "Content-type: text/html\n\n";
 print "<html><head><title>HELP TICKET AIR OUTPUT</title></head>\n";
 print "<body><FONT SIZE = 5><b>LIFE SAFETY SYSTEMS<br>HELP TICKET AIR OUTPUT</b></FONT><FONT SIZE = 2 color = red>\&nbsp\;\&nbsp\;<b>$ver</b></font><br><br>\n";
