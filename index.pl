@@ -82,11 +82,21 @@ print "<FONT SIZE = 2 color = red>* </font>Please provide the location where you
 print  "<input id=loc name=loc type=text size=55><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Contact name\:\&nbsp\;\&nbsp\;<br>";
 print  "<select name=con>\n";
-print  "<option></option>\n";
+#print  "<option></option>\n";
+open my $data, '<', $techtbl;
+chomp(my @lines = <$data>);
+close $data;
+ my %values =  split(/[=;]/, @lines);
 
+  foreach my $k (keys %values) {
+    #print "$k: $values{$k}\n";
+    print  "<option value=$k: $values{$k}>$k: $values{$k}</option>\n";
+  }
+print  "</select>\n";
 # print "<input id=con name=con type=text><br><br>";
-print "<FONT SIZE = 2 color = red>* </font>Contact phone number\:\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;<br>";
-print "<input id=ctel name=ctel type=text><br><br>";
+
+#print "<FONT SIZE = 2 color = red>* </font>Contact phone number\:\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;<br>";
+#print "<input id=ctel name=ctel type=text><br><br>";
 print "<input type=submit> * <input type=reset><br><br>\n";
 print "</form>";
 print "<br><br>";
