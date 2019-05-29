@@ -51,6 +51,9 @@ $err = "Contact Name";
 #$err = "Contact Phone";
 #&error;
 #}
+
+my ($contact, $phone) = split(/*/, $FORM{'con'});
+
 &output;
 
 #######################
@@ -89,7 +92,7 @@ close $data;
  
  foreach my $lines (@lines) {
    my ($contact, $phone) = split(/=/, $lines);
-   print  "<option value='$contact  $phone'>$contact  $phone</option>\n";
+   print  "<option value='$contact*$phone'>$contact\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$phone</option>\n";
    }
    
 print  "</select>\n";
@@ -113,9 +116,9 @@ print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;LIFE SAFETY AND ACCESS CONTROL<br><br>";
 print "Please provide the location where you are having this problem (building name/room #/etc) (required):<br><br>";
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$FORM{'loc'}<br><br>";
 print "Contact name if different from the person submitting the request\:<br><br>";
-print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$FORM{'con'}<br><br>";
+print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$contact<br><br>";
 print "Contact phone number (required)\:<br><br>";
-print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$FORM{'ctel'}<br><br>";
+print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$phone<br><br>";
 print "In case a technician needs access to the phone, please provide a suggested date and time (M-F, 8a-5p)\:<br><br>";
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;ASAP<br><br>";
 print "General description of the problem (required)\:<br><br>";
