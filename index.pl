@@ -86,12 +86,12 @@ print  "<select name=con>\n";
 open my $data, '<', $techtbl;
 my @lines = <$data>;
 close $data;
- my %values =  split(/=/, @lines);
-
-  foreach my $k (keys %values) {
-    #print "$k: $values{$k}\n";
-    print  "<option value='$k'>$k</option>\n";
+ 
+ foreach my $lines (@lines) {
+   my ($name, $value) = split(/=/, $lines);
+   print  "<option value='$name'>$name</option>\n";
   }
+  
 print  "</select>\n";
 # print "<input id=con name=con type=text><br><br>";
 
