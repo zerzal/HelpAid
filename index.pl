@@ -52,8 +52,6 @@ $err = "Contact Name";
 #&error;
 #}
 
-my ($contact, $phone) = split(/*/, $FORM{'con'});
-
 &output;
 
 #######################
@@ -104,6 +102,7 @@ exit;
 }
 
 sub output {
+my ($contact, $phone) = split(/*/, $FORM{'con'});
 print "Content-type: text/html\n\n";
 print "<html><head><title>HELP TICKET AIR OUTPUT</title></head>\n";
 print "<body><FONT SIZE = 5><b>LIFE SAFETY SYSTEMS<br>HELP TICKET AIR OUTPUT</b></FONT><FONT SIZE = 2 color = red>\&nbsp\;\&nbsp\;<b>$ver</b></font><br><br>\n";
