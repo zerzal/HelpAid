@@ -117,7 +117,7 @@ print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$FORM{'loc'}<br><br>";
 print "Contact name if different from the person submitting the request\:<br><br>";
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$con<br><br>";
 print "Contact phone number (required)\:<br><br>";
-print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;Ralph<br><br>";
+print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$ctel<br><br>";
 print "In case a technician needs access to the phone, please provide a suggested date and time (M-F, 8a-5p)\:<br><br>";
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;ASAP<br><br>";
 print "General description of the problem (required)\:<br><br>";
