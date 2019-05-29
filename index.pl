@@ -82,7 +82,7 @@ print "<FONT SIZE = 2 color = red>* </font>Choose Type of Alarm Panel\:\&nbsp\;\
 print "<select name=type>";
   print "<option value=fire>Fire</option>";
   print "<option value=other>Other</option>";
-print "</select>";
+print "</select><br><br>";
 
 
 print "<FONT SIZE = 2 color = red>* </font>Telephone number(s) with the problem\:\&nbsp\;\&nbsp\;<br>";
@@ -130,6 +130,7 @@ print "In case a technician needs access to the phone, please provide a suggeste
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;ASAP<br><br>";
 print "General description of the problem (required)\:<br><br>";
 print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.<br><br><br><br>";
+print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.<br><br><br><br>";
 print "<li><a href=$cgiurl>ENTER ANOTHER REMEDY</a><br><br>\n";
 print "</body></html>\n";
 
