@@ -77,6 +77,14 @@ print "<html><head><title>Help Ticket Aid $ver</title></head>\n";
 print "<body><FONT SIZE = 5><b>LIFE SAFETY SYSTEMS<br>HELP TICKET AID</b></FONT><FONT SIZE = 2 color = red>\&nbsp\;\&nbsp\;<b>$ver</b><br><br>\n";
 print "* </font><i> = Required fields</i><br><br>\n";
 print "<form method=POST action= $cgiurl>\n";
+
+print "<FONT SIZE = 2 color = red>* </font>Choose Type of Alarm Panel\:\&nbsp\;\&nbsp\;<br>";
+print "<select name="type">";
+  print "<option value="fire">Fire</option>";
+  print "<option value="other">Other</option>";
+print "</select>";
+
+
 print "<FONT SIZE = 2 color = red>* </font>Telephone number(s) with the problem\:\&nbsp\;\&nbsp\;<br>";
 print "<input id=tel name=tel type=text><br><br>";
 print "<FONT SIZE = 2 color = red>* </font>Please provide the location where you are having this problem (building name/room #/etc)\:\&nbsp\;\&nbsp\;<br>";
