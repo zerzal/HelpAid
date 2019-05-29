@@ -79,9 +79,9 @@ print "* </font><i> = Required fields</i><br><br>\n";
 print "<form method=POST action= $cgiurl>\n";
 
 print "<FONT SIZE = 2 color = red>* </font>Choose Type of Alarm Panel\:\&nbsp\;\&nbsp\;<br>";
-print "<select name="type">";
-  print "<option value="fire">Fire</option>";
-  print "<option value="other">Other</option>";
+print "<select name=type>";
+  print "<option value=fire>Fire</option>";
+  print "<option value=other>Other</option>";
 print "</select>";
 
 
