@@ -121,7 +121,8 @@ print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;$ctel<br><br>";
 print "In case a technician needs access to the phone, please provide a suggested date and time (M-F, 8a-5p)\:<br><br>";
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;ASAP<br><br>";
 print "General description of the problem (required)\:<br><br>";
-print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.<br><br>";
+print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.<br><br><br><br>";
+print "<li><a href=$cgiurl>ENTER ANOTHER REMEDY</a><br><br>\n";
 print "</body></html>\n";
 
 exit;
