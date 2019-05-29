@@ -50,7 +50,7 @@ $err = "Contact Name";
 #if (!$FORM{'ctel'}) {
 #$err = "Contact Phone";
 #&error;
-}
+#}
 &output;
 
 #######################
