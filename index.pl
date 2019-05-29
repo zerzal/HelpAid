@@ -86,7 +86,7 @@ print  "<select name=con>\n";
 open my $data, '<', $techtbl;
 chomp(my @lines = <$data>);
 close $data;
- my %values =  split(/[=;]/, @lines);
+ my %values =  split(/=/, @lines);
 
   foreach my $k (keys %values) {
     #print "$k: $values{$k}\n";
