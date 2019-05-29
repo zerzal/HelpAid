@@ -90,7 +90,7 @@ close $data;
 
   foreach my $k (keys %values) {
     #print "$k: $values{$k}\n";
-    print  "<option value=$k>$k</option>\n";
+    print  "<option value='$k'>$k</option>\n";
   }
 print  "</select>\n";
 # print "<input id=con name=con type=text><br><br>";
