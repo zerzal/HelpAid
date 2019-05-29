@@ -84,13 +84,13 @@ print "<FONT SIZE = 2 color = red>* </font>Contact name\:\&nbsp\;\&nbsp\;<br>";
 print  "<select name=con>\n";
 #print  "<option></option>\n";
 open my $data, '<', $techtbl;
-chomp(my @lines = <$data>);
+my @lines = <$data>;
 close $data;
  my %values =  split(/=/, @lines);
 
   foreach my $k (keys %values) {
     #print "$k: $values{$k}\n";
-    print  "<option value=$k: $values{$k}>$k: $values{$k}</option>\n";
+    print  "<option value=$k>$k</option>\n";
   }
 print  "</select>\n";
 # print "<input id=con name=con type=text><br><br>";
