@@ -47,9 +47,9 @@ if (!$FORM{'con'}) {
 $err = "Contact Name";
 &error;
 }
-if (!$FORM{'ctel'}) {
-$err = "Contact Phone";
-&error;
+#if (!$FORM{'ctel'}) {
+#$err = "Contact Phone";
+#&error;
 }
 &output;
 
