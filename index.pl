@@ -7,7 +7,7 @@
 #use strict;
 #use warnings;
 $cgiurl = "http://help-aid-dcayers.cloudapps.unc.edu/";
-$ver = "1.0";  # SCRIPT VERSION NUMBER
+$ver = "1.1";  # SCRIPT VERSION NUMBER
 $techtbl = "techs.txt";
     
 # Get the input
