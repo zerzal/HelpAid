@@ -134,7 +134,7 @@ my $type = $FORM{'type'};
 
 print "$type<br><br>\n";
 
-if ($type == "Fire") {
+if ($type eq "Fire") {
 
     print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.\n";
 }
