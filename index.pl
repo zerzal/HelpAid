@@ -132,7 +132,7 @@ print "General description of the problem (required)\:<br><br>";
 
 my $type = $FORM{'type'};
 
-print "$type<br><br>\n";
+#print "$type<br><br>\n";
 
 if ($type eq "Fire") {
 
