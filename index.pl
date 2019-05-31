@@ -130,9 +130,11 @@ print "In case a technician needs access to the phone, please provide a suggeste
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;ASAP<br><br>";
 print "General description of the problem (required)\:<br><br>";
 
-print "$FORM{'type'}<br><br>\n";
+my $type = $FORM{'type'};
 
-if ($FORM{'type'}="Fire") {
+print "$type<br><br>\n";
+
+if ($type == "Fire") {
 
     print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.\n";
 }
