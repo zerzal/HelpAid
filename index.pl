@@ -80,8 +80,8 @@ print "<form method=POST action= $cgiurl>\n";
 
 print "<FONT SIZE = 2 color = red>* </font>Choose Type of Alarm Panel\:\&nbsp\;\&nbsp\;<br>";
 print "<select name=type>";
-  print "<option value=fire>Fire</option>";
-  print "<option value=other>Other</option>";
+  print "<option value=Fire>Fire</option>";
+  print "<option value=Other>Other</option>";
 print "</select><br><br>";
 
 
@@ -130,15 +130,15 @@ print "In case a technician needs access to the phone, please provide a suggeste
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;ASAP<br><br>";
 print "General description of the problem (required)\:<br><br>";
 
- print "$FORM{'type'}\n";
+# print "$FORM{'type'}\n";
 
-#if ($FORM{'type'}=Fire) {
+if ($FORM{'type'}=Fire) {
 
-    #print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.\n";
-#}
- #else {
- #   print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.\n";
-#}
+    print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.\n";
+}
+ else {
+    print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.\n";
+}
 
 #print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.";
 #print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.";
