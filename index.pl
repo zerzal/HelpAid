@@ -142,9 +142,8 @@ if ($type eq "Fire") {
     print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.\n";
 }
 
-#print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.";
-#print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.";
-print "<br><br><br><br><li><a href=$cgiurl>ENTER ANOTHER REMEDY</a><br><br>\n";
+print "<br><br><br><li><a href=https://help.unc.edu/help/olhr/ target=_blank>Help Web Site</a><br><br>\n";
+print "<br><br><li><a href=$cgiurl>Enter another remedy</a><br><br>\n";
 print "</body></html>\n";
 
 exit;
