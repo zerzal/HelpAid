@@ -130,12 +130,15 @@ print "In case a technician needs access to the phone, please provide a suggeste
 print "\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;ASAP<br><br>";
 print "General description of the problem (required)\:<br><br>";
 
-if ($FORM{'type'}=Fire) {
-    print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.\n";
-}
- else {
-    print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.\n";
-}
+ print "$FORM{'type'}\n";
+
+#if ($FORM{'type'}=Fire) {
+
+    #print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.\n";
+#}
+ #else {
+ #   print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.\n";
+#}
 
 #print "FIRE ALARM DIALER LINE(S) NOT SHOWING DIAL TONE AT THE DIALER.";
 #print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.";
