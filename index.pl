@@ -142,7 +142,7 @@ if ($type eq "Fire") {
     print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.\n";
 }
 print "<br><br><center><font color = red><h1>STOP</h1></font></center>\n";
-print "<br><br><li><a href=https://help.unc.edu/help/olhr/ target=_blank>Help Web Site</a>\n";
+print "<br><li><a href=https://help.unc.edu/help/olhr/ target=_blank>Help Web Site</a>\n";
 print "<li><a href=$cgiurl>Enter another remedy</a><br><br>\n";
 print "</body></html>\n";
 
