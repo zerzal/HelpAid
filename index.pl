@@ -9,6 +9,7 @@
 $cgiurl = "http://help-aid-dcayers.cloudapps.unc.edu/";
 $ver = "1.1";  # SCRIPT VERSION NUMBER
 $techtbl = "techs.txt";
+$helpsite = "https://help.unc.edu/sp";
     
 # Get the input
 ########################
@@ -142,7 +143,7 @@ if ($type eq "Fire") {
     print "THIS ALARM LINE IS SHOWING NO DIAL TONE AT ALARM PANEL.\n";
 }
 print "<br><br><center><font color = red><h1>STOP</h1></font></center>\n";
-print "<br><li><a href=https://help.unc.edu/help/olhr/ target=_blank>Help Web Site</a>\n";
+print "<br><li><a href=$helpsite target=_blank>Help Web Site</a>\n";
 print "<li><a href=$cgiurl>Enter another remedy</a><br><br>\n";
 print "</body></html>\n";
 
